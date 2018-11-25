@@ -3,7 +3,7 @@ from message import VkApi
 from os import getenv
 
 
-api = VkApi(getenv('VK_TOKEN'))
+api = VkApi(('7418d0b4d3258f30c143bad273f1e92e707edbf2bd136929734f04a4bcc305bab861de4068142e8fcc442'))
 
 
 app = Flask(__name__)
