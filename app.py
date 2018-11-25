@@ -13,6 +13,9 @@ app = Flask(__name__)
 def vk():
     message = request.json()
 
+    if message.get('type') == 'confirmation':
+        return 'c7fc81d0'
+
     if message.get('type') == 'message_new':
         api.message(
             message.get('object').get('from_id'), 
