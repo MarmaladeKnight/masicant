@@ -1,6 +1,5 @@
 #Добавление модулей
 from requests import post
-from os import getenv
 
 
 class VkApi:
@@ -33,7 +32,3 @@ class VkApi:
             'message':text
         })
 
-
-api = VkApi(getenv('VK_TOKEN'))
-
-print(repr(api.message(171560037, 'asdf')))
