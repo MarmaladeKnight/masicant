@@ -9,7 +9,7 @@ api = VkApi(('7418d0b4d3258f30c143bad273f1e92e707edbf2bd136929734f04a4bcc305bab8
 app = Flask(__name__)
 
 
-@app.route('/vk/')
+@app.route('/vk/', method=['POST'])
 def vk():
     message = request.json()
 
