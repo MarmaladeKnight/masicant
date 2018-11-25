@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/vk/', methods=['POST'])
 def vk():
-    message = request.json
+    message = request.get_json()
 
     if message.get('type') == 'confirmation':
         return 'c7fc81d0'
